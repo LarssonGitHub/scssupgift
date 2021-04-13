@@ -1,0 +1,48 @@
+header, footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    background-color: $mainColor;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+footer {
+    position: sticky; 
+    bottom: 0; 
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    article {
+        padding: 20px 30px;
+        width: 70%;
+        margin: 20px auto;
+        background-color: $thirdColor;
+        border-radius: 20px;
+        .articleImg {
+            width: 100%;
+        }
+    }
+}
+
+.styleListLinks {
+    font-weight: $font-weight-heavy;
+    padding: 0;
+    li {
+        list-style-type: none;
+        display: inline;
+        margin: 0 20px;
+        a {
+            color: $hyperLinkTextColor;
+        } 
+    }
+}

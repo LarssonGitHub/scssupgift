@@ -1,0 +1,2 @@
+header,footer{display:flex;align-items:center;justify-content:space-between;height:70px;background-color:red}header{position:sticky;top:0;width:100%}footer{position:sticky;bottom:0;width:100%}main{display:flex;flex-direction:column;justify-content:space-between}main article{padding:20px 30px;width:70%;margin:20px auto}main article .articleImg{width:100%}
+/*# sourceMappingURL=flexboxAndLayout.min.css.map */
