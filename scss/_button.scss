@@ -1,0 +1,29 @@
+%buttonForm {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    border-radius: 20px;
+    margin: 0.7rem 0;
+}
+
+
+.articleBtn, .BannerBtn {
+    @extend %buttonForm ;
+    background-color: $btnMainColor;
+    color: $secondaryMainTextColor;
+
+    &:hover {
+        background-color: $btnHoverColor;
+        color: $mainTextColor;
+    }
+
+    &:active{
+        background-color: $btnActiveColor;
+    }
+}
+

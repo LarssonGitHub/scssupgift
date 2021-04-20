@@ -1,0 +1,93 @@
+header,
+footer {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    background-color: $mainColor;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    article {
+        padding: 20px 30px;
+        width: 70%;
+        margin: 20px auto;
+        background-color: $thirdColor;
+        border-radius: 20px;
+
+        .articleImg {
+            width: 100%;
+        }
+    }
+}
+
+.styleListLinks {
+    font-weight: $font-weight-heavy;
+    padding: 0;
+
+    li {
+        list-style-type: none;
+        display: inline;
+        margin: 0 20px;
+
+        a {
+            color: $hyperLinkTextColor;
+        }
+    }
+}
+
+//Note the vars moving around 
+
+@mixin banner ($image, $leftPosition, $bannerColor, $opacity) {
+    display: flex;
+    position: relative;
+    background: url($image);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 180px);
+    text-align: center;
+
+    &::before {
+        content: "";
+        background: $bannerColor;
+        width: 100%;
+        height: 100%;
+        opacity: $opacity;
+    }
+
+    .banner-content {
+        //https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/
+        position: absolute;
+        left: $leftPosition;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        //Hate this... Need opcaity.. Or something else, but meh. You can see it.
+        background-color: lighten($mainColor, 25%);
+        padding: 1em;
+        border-radius: 25px;
+    }
+}
+
+.hero-banner {
+    @include banner("/banner.jpeg", 50%, $secondaryColor, 50%);
+}
+

@@ -1,0 +1,57 @@
+//Animation Banner
+.banner-content {
+    animation: bannerApear 1.5s linear;
+    .BannerBtn:hover {
+        animation: bannerBtnAnimation 0.2s infinite;
+    }
+}
+
+// Goal animation
+@keyframes bannerApear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+// ////Play around!
+// @keyframes bannerApear {
+//     0% {
+//         opacity: 0;
+//         background-color: $btnMainColor;
+//         font-size: 0rem;
+//         transform: rotate(90deg);
+//     }
+//     50% {
+//         background-color: $mainColor;
+//         transform: rotate(20deg);
+//         font-size: 10rem;
+//     }
+//     75% {
+//         background-color: $btnHoverColor;
+//         transform: rotate(180deg);
+//         font-size: 4rem;
+//     }
+//     100% {
+//         opacity: 1;
+
+//     }
+// }
+
+// @keyframes bannerBtnAnimation {
+//     0% {
+//         transform: rotate(90deg);
+//         padding: 2em;
+//         font-size: 5em;
+//         background-color: green;
+//     }
+//     50% {
+//         font-size: 2rem;
+//     }
+//     100% {
+//         transform: rotate(-90deg);
+//         background-color: red;
+//     }
+// }
