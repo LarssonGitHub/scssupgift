@@ -89,14 +89,14 @@ main {
 
 
 .swiper-container, .firstImgBanner {
-    @include banner("/assets/banner.jpeg", 50%, $mainColor, 50%);
+    @include banner("/assets/images/banner.jpeg", 50%, $mainColor, 50%);
 }
 
 .swiper-container, .secondImgBanner {
-    @include banner("/assets/banner2.jpeg", 50%, $secondaryColor, 50%);
+    @include banner("/assets/images/banner2.jpeg", 50%, $secondaryColor, 50%);
 }
 
 .swiper-container, .thirdImgBanner {
-    @include banner("/assets/banner3.jpeg", 50%, $thirdColor, 50%);
+    @include banner("/assets/images/banner3.jpeg", 50%, $thirdColor, 50%);
 }
 
