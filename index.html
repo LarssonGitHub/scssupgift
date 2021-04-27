@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.min.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -23,27 +25,54 @@
         </header>
 
         <main>
-            <div class="hero-banner">
-                <div class="sliderBtnLeft"></div>
-                <div class="banner-content">
-                    <h1 class="title">
-                        Disney, Obey us
-                    </h1>
-                    <p class="subtitle">
-                        I have a hate love relationship with Disney
-                    </p>
-                    <button class="BannerBtn">Press me to read more</button>
-                    
+            <div class="swiper-container">
+
+  
+                
+        
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide firstImgBanner">    <div class="banner-content">
+                        <h1 class="title">
+                            Disney, Obey us
+                        </h1>
+                        <p class="subtitle">
+                            I have a hate love relationship with Disney
+                        </p>
+                        <button class="BannerBtn">Press me to read more</button>
+                        
+                    </div></div>
+                    <div class="swiper-slide secondImgBanner">    <div class="banner-content">
+                        <h1 class="title">
+                            Disney, Obey us
+                        </h1>
+                        <p class="subtitle">
+                            I changed my mind, I love it
+                        </p>
+                        <button class="BannerBtn">Press me to read more</button>
+                        
+                    </div></div>
+                    <div class="swiper-slide thirdImgBanner">    <div class="banner-content">
+                        <h1 class="title">
+                            Disney, Obey us
+                        </h1>
+                        <p class="subtitle">
+                            No, I changed my mind, I hate it
+                        </p>
+                        <button class="BannerBtn">Press me to read more</button>
+                        
+                    </div></div>
                 </div>
-                <div class="sliderCount"><span>a</span><span>a</span><span>a</span><span>a</span></div>
-                <div class="sliderBtnRight"></div>
-           
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
             </div>
 
 
 
-        
-        
+
+
 
             <article>
                 <img class="articleImg" src="./cryinglion.jpg" alt="ruinedChildhood" width="500">
@@ -52,7 +81,7 @@
                 </p>
                 <p class="bodyText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt suscipit
                     voluptate, numquam velit et nobis deserunt sapiente ut omnis eum laboriosam ratione in ducimus ullam
-                    magnam harum ab, dignissimos consectetur.
+                    magnam harum ab, dignissimos csonsectetur.
                     Minus sequi delectus impedit magni dignissimos laborum pariatur dicta, voluptatibus blanditiis
                     mollitia qui odit consequuntur accusamus, nesciunt exercitationem, ipsam harum minima! Inventore
                     adipisci praesentium explicabo perferendis molestiae. Doloribus, voluptates vel!</p>
@@ -84,6 +113,37 @@
                 <li><a href="#">Instagram</a></li>
             </ul>
         </footer>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+        <script>
+            const swiper = new Swiper('.swiper-container', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+                
+                effect : 'fade',  
+                
+            });
+        </script>
 </body>
 
 </html>

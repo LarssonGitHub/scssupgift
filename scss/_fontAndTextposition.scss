@@ -3,7 +3,9 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
 
 // fonts
-$font-family: 'Lato', Helvetica, sans-serif;
+$font-family: 'Lato',
+Helvetica,
+sans-serif;
 $font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-heavy: 700;
@@ -23,12 +25,13 @@ body {
 }
 
 * {
-    color: $mainTextColor;
+  color: $mainTextColor;
   font-family: $font-family;
   line-height: $font-height;
-margin: 0;
-padding: 0;
- box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 0;
 }
 
 // typography
@@ -68,8 +71,9 @@ p {
 
 .ingress {
   font-weight: $font-weight-heavy;
-  &::first-letter{
-   font-size: 2rem;
+
+  &::first-letter {
+    font-size: 2rem;
   }
 }
 

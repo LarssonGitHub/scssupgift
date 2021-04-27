@@ -1,6 +1,6 @@
 //Animation Banner
-.banner-content {
-    animation: bannerApear 1.5s linear;
+.swiper-slide-active .banner-content {
+    animation: bannerApear 1s linear;
     .BannerBtn:hover {
         animation: bannerBtnAnimation 0.2s infinite;
     }
