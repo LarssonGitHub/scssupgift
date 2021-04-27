@@ -27,3 +27,25 @@
     }
 }
 
+//make arroww
+ .sliderBtnLeft, .sliderBtnRight {
+    border: solid $mainColor;
+    border-width: 0 10px 10px 0;
+    border-radius: 20%;
+    padding: 0.6em;
+    margin: 0 2em;
+
+} 
+.sliderBtnLeft {
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);  
+   }
+   .sliderBtnRight {
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);  
+   }
+
+ 
+   .sliderCount {
+  
+}

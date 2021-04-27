@@ -91,3 +91,17 @@ main {
     @include banner("/banner.jpeg", 50%, $secondaryColor, 50%);
 }
 
+.sliderBtnLeft, .sliderBtnRight, .sliderCount {
+    position: absolute;
+} .sliderBtnLeft {
+    left: 0%;
+    top: 50%;        
+} .sliderBtnRight {
+    right: 0%;
+    top: 50%;
+} .sliderCount {
+    bottom: 0;
+    left: 50%;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+}
